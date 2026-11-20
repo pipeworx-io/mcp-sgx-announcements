@@ -1,0 +1,31 @@
+[
+  {
+    "name": "sgx_announcements",
+    "description": "Singapore Exchange company announcements, newest first: issuer, security, SGX category (results, dividends, share buy-backs, acquisitions and others), title, announcement date and time (Singapore) and the link to the announcement page with its documents. Filter by issuer name (exact name such as \"DBS GROUP HOLDINGS LTD\", or part of a name), date range and category. The exchange free feed covers roughly the last three months. Source: Singapore Exchange (SGX), company announcements.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "company": {
+          "type": "string",
+          "description": "Issuer name or part of it, e.g. \"DBS GROUP HOLDINGS LTD\" or \"Singtel\". The feed has no stock code; omit for the whole market."
+        },
+        "date_from": {
+          "type": "string",
+          "description": "First day, YYYY-MM-DD (Singapore date)"
+        },
+        "date_to": {
+          "type": "string",
+          "description": "Last day, YYYY-MM-DD (Singapore date)"
+        },
+        "category": {
+          "type": "string",
+          "description": "Only announcements whose SGX category name contains this text, e.g. \"Financial Statements\" or \"Dividend\""
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max rows to return (default 50, max 300)"
+        }
+      }
+    }
+  }
+]

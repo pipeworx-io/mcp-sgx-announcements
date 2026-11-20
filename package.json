@@ -1,0 +1,33 @@
+{
+  "name": "@pipeworx/mcp-sgx-announcements",
+  "version": "0.1.0",
+  "description": "Singapore Exchange (SGX): company announcements.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "mcp-sgx-announcements": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "sgx-announcements"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-sgx-announcements.git"
+  },
+  "mcpName": "io.github.pipeworx-io/sgx-announcements",
+  "pipeworx": {
+    "mode": "gateway",
+    "slug": "sgx-announcements",
+    "gatewaySlug": "sgx-announcements",
+    "sourceHash": "v1-1c9bd78b11a407612ef79d4cc223b568a55265455a976445a70f49ab89aa138c",
+    "sourceCommit": "01fc48151e144f8b0923c0f986eb172c285e5e09"
+  }
+}
